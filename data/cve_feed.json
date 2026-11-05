@@ -1,0 +1,62 @@
+{
+  "feed_name": "scs-sample-cve-feed",
+  "description": "A small offline vulnerability feed. In production this role is played by the NVD, OSV.dev, GitHub Advisory DB, or a vendor feed that trivy/grype download and cache.",
+  "updated": "2026-11-01",
+  "vulnerabilities": [
+    {
+      "id": "CVE-2021-44228",
+      "alias": "Log4Shell",
+      "package": "log4j-core",
+      "ecosystem": "maven",
+      "affected": {"introduced": "2.0.0", "fixed": "2.15.0"},
+      "severity": "critical",
+      "cvss": 10.0,
+      "summary": "JNDI features in Log4j allow remote code execution via crafted log messages."
+    },
+    {
+      "id": "CVE-2021-45046",
+      "package": "log4j-core",
+      "ecosystem": "maven",
+      "affected": {"introduced": "2.0.0", "fixed": "2.16.0"},
+      "severity": "high",
+      "cvss": 9.0,
+      "summary": "Incomplete Log4Shell fix allows DoS and information leak."
+    },
+    {
+      "id": "CVE-2021-23337",
+      "package": "lodash",
+      "ecosystem": "npm",
+      "affected": {"introduced": "0.0.0", "fixed": "4.17.21"},
+      "severity": "high",
+      "cvss": 7.2,
+      "summary": "Command injection via template in lodash before 4.17.21."
+    },
+    {
+      "id": "CVE-2020-14343",
+      "package": "pyyaml",
+      "ecosystem": "pypi",
+      "affected": {"introduced": "0.0.0", "fixed": "5.4"},
+      "severity": "critical",
+      "cvss": 9.8,
+      "summary": "Arbitrary code execution when loading untrusted YAML via full_load."
+    },
+    {
+      "id": "CVE-2021-3450",
+      "package": "openssl",
+      "ecosystem": "system",
+      "affected": {"introduced": "1.1.1h", "fixed": "1.1.1k"},
+      "severity": "high",
+      "cvss": 7.4,
+      "summary": "CA certificate check bypass with X509_V_FLAG_X509_STRICT."
+    },
+    {
+      "id": "CVE-2023-99999",
+      "package": "leftpad",
+      "ecosystem": "npm",
+      "affected": {"introduced": "0.0.0", "fixed": "1.0.0"},
+      "severity": "medium",
+      "cvss": 5.0,
+      "summary": "A vuln for a package the sample app does NOT use (must not match)."
+    }
+  ]
+}

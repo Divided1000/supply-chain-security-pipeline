@@ -1,0 +1,3 @@
+# Core pipeline is standard-library only (hashlib, secrets, json) so it runs anywhere.
+# Only tests need a runner.
+pytest>=7.4
